@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://119.3.23.175:3306/openschool_transfer?useUnicode=true&characterEncoding=utf8&useSSL=false
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+#    hibernate:
+#      ddl-auto: create
+logging:
+  level:
+    com.eastedu.openschool.db: debug

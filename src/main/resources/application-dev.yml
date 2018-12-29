@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: dev
+    password: dev@123
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://149.129.99.45:3306/independent_photographer?useUnicode=true&characterEncoding=utf8&useSSL=false
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+#    hibernate:
+#      ddl-auto: create
+#logging:
+#  level:
+#    com.eastedu.openschool.db: debug
+swagger:
+  base-package: com.independent
+  base-path: /**
+  description: independent photographer Api - Feature
+  enabled: true
+  exclude-path: /error
+  title: independent photographer service Api - Feature
+  version: 0.0.1-SNAPSHOT
